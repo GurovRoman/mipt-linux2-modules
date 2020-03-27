@@ -1,5 +1,5 @@
-#ifndef PHONEBOOK_H
-#define PHONEBOOK_H
+#ifndef PHONEBOOK_MODULE_H
+#define PHONEBOOK_MODULE_H
 
 #include <linux/list.h>
 
@@ -7,7 +7,7 @@
 #define FIELD_COUNT 5
 #define MAX_BUFFER_SIZE ((MAX_FIELD_SIZE + 1) * FIELD_COUNT)
 
-struct user_data {
+struct user_data_node {
 	char last_name[MAX_FIELD_SIZE];
 	char first_name[MAX_FIELD_SIZE];
 	char age[MAX_FIELD_SIZE];
